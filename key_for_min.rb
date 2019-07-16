@@ -2,7 +2,7 @@
 # Given a hash with numeric values, return the key for the smallest value
 require 'pry'
 def key_for_min_value(hash)
-  if hash == {}
+  if hash = {}
     return nil
   else
     min_key = hash.keys[0]
