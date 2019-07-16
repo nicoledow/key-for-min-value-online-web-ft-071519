@@ -11,7 +11,6 @@ def key_for_min_value(hash)
       if val < min_val
         min_val = val
         min_key = key
-        binding.pry
       end
     end
   min_key
