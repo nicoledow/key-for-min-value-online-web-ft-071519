@@ -2,9 +2,7 @@
 # Given a hash with numeric values, return the key for the smallest value
 require 'pry'
 def key_for_min_value(hash)
-  if hash = {}
-    return nil
-  else
+  if hash.keys[0]
     min_key = hash.keys[0]
     min_val = hash.values[0]
     hash.each do |key, val|
@@ -13,6 +11,8 @@ def key_for_min_value(hash)
         min_key = key
       end
     end
+  else
+    return nil
   end
   min_key
 end
