@@ -23,5 +23,7 @@ end
 def key_for_min_value(hash)
   if hash.empty?
     return nil
+  else
+    min_value = 
   end
 end
